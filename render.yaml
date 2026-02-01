@@ -1,12 +1,5 @@
 services:
   - type: web
     name: proposal
-    runtime: static
-    buildCommand: echo "No build needed"
+    env: static
     staticPublishPath: .
-    pullRequestPreviewsEnabled: true
-    headers:
-      - path: /*
-        name: Cache-Control
-        value: public, max-age=3600
-
